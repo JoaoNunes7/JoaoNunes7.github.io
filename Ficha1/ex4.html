@@ -5,37 +5,65 @@
     <title>Ex3</title>
 </head>
 <body>
-    <fieldset style="width: 50%;">
+    <fieldset style="width: 50%">
         <legend>Informações do CV</legend>
         <form action="http://www.gis4cloud.com/PTW/formulario.php" method="GET">
-        <label for="textNome">Nome:</label>
-        <input type="text" id="textNome" name="textNome">
-        <br><br>
-        <label for="textPass">Password:</label>
-        <input type="password" id="textPass" name="textPass">
-        <br><br>
-        <label for="checkViaturaa">Viatura Própria:</label>
-        <input type="checkbox" id="checkViaturaa" name="checkBoxes">
-        <br>
-        <label for="checkComputador">Computador:</label>
-        <input type="checkbox" id="checkComputador" name="checkBoxes"> 
-        <br>
-        <p>Habilitações literárias:</p>
-        <label for="radioLicenciatura">licenciatura</label>
-        <input type="radio" id="radioLicenciatura" name="radios" value="licenciatura">
-        <br>
-        <label for="radioMestrado">mestrado</label>
-        <input type="radio" id="radioMestrado" name="radios" value="mestrado">
-        <br>
-        <label for="radioDoutoramento">doutoramento</label>
-        <input type="radio" id="radioDoutoramento" name="radios" value="doutoramento">
-        <br><br>
-        <label for="textArea" style="display: block;">Experiência Profissional:</label>
-        <textarea id="textArea" name="textArea" rows="7" cols="50"></textarea>
-        <br><br>
-        <label for="selectbox">Idade:</label>
-        <input type="number" min="31" max="50" placeholder="entre 31 e 50 anos" style="width:130px">
-        <br><br>
+          <label for="textNome">Nome:</label>
+          <input type="text" id="textNome" name="nome" />
+          <br /><br />
+          <label for="textPass">Password:</label>
+          <input type="password" id="textPass" name="pass" />
+          <br /><br />
+          <label for="checkViaturaa">Viatura Própria:</label>
+          <input type="checkbox" id="checkViaturaa" name="viatura" />
+          <br />
+          <label for="checkComputador">Computador:</label>
+          <input type="checkbox" id="checkComputador" name="computador" />
+          <br />
+          <p>Habilitações literárias:</p>
+          <label for="radioLicenciatura">licenciatura</label>
+          <input
+            type="radio"
+            id="radioLicenciatura"
+            name="habilitacoes"
+            value="licencitura"
+          />
+          <br />
+          <label for="radioMestrado">mestrado</label>
+          <input
+            type="radio"
+            id="radioMestrado"
+            name="habilitacoes"
+            value="mestrado"
+          />
+          <br />
+          <label for="radioDoutoramento">doutoramento</label>
+          <input
+            type="radio"
+            id="radioDoutoramento"
+            name="habilitacoes"
+            value="doutoramento"
+          />
+          <br /><br />
+          <label for="textArea" style="display: block"
+            >Experiência Profissional:</label
+          >
+          <textarea id="textArea" name="textArea" rows="7" cols="50"></textarea>
+          <br /><br />
+          <label for="selectbox">Idade:</label>
+          <select
+            name="idade"
+            placeholder="entre 31 e 50 anos"
+            style="width: 130px"
+          >
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+          </select>
+          <br /><br />
         <input type="image" src="ok.gif" alt="submit">
         <input type="reset" name="reset" value="Apagar">
     </form>
