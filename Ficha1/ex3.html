@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex3</title>
+</head>
+<body>
+    <fieldset style="width: 50%;">
+        <legend>Informações do CV</legend>
+        <form action="http://www.gis4cloud.com/PTW/formulario.php" method="POST">
+        <label for="textNome">Nome:</label>
+        <input type="text" id="textNome" name="textNome">
+        <br><br>
+        <label for="textPass">Password:</label>
+        <input type="password" id="textPass" name="textPass">
+        <br><br>
+        <label for="checkViaturaa">Viatura Própria:</label>
+        <input type="checkbox" id="checkViaturaa" name="checkBoxes">
+        <br>
+        <label for="checkComputador">Computador:</label>
+        <input type="checkbox" id="checkComputador" name="checkBoxes"> 
+        <br>
+        <p>Habilitações literárias:</p>
+        <label for="radioLicenciatura">licenciatura</label>
+        <input type="radio" id="radioLicenciatura" name="radios" value="licencitura">
+        <br>
+        <label for="radioMestrado">mestrado</label>
+        <input type="radio" id="radioMestrado" name="radios" value="mestrado">
+        <br>
+        <label for="radioDoutoramento">doutoramento</label>
+        <input type="radio" id="radioDoutoramento" name="radios" value="doutoramento">
+        <br><br>
+        <label for="textArea" style="display: block;">Experiência Profissional:</label>
+        <textarea id="textArea" name="textArea" rows="7" cols="50"></textarea>
+        <br><br>
+        <label for="selectbox">Idade:</label>
+        <input type="number" min="31" max="50" placeholder="entre 31 e 50 anos" style="width:130px">
+        <br><br>
+        <input type="submit" name="Enviar" value="Enviar">
+        <input type="reset" name="reset" value="Apagar">
+    </form>
+        
+    </fieldset>
+</body>
+</html>
