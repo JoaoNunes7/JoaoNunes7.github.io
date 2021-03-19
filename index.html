@@ -1,4 +1,4 @@
-<html>
+<!--<html>
   <head>
     <meta charset="utf-8" />
     <title>Fichas João Nunes</title>
@@ -17,5 +17,102 @@
     <a href="Ficha2/index.html">ex1</a>
     <h3>Ficha3:</h3>
     <a href="Ficha3/index.html">ex1</a>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        transition: background-color 0.5s;
+      }
+
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      #main {
+        transition: margin-left 0.5s;
+        padding: 16px;
+      }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {
+          padding-top: 15px;
+        }
+        .sidenav a {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Sobre</a>
+      <a href="Ficha1/ex1.html">Ficha1Ex1</a>
+      <a href="Ficha1/ex2.html">Ficha1Ex2</a>
+      <a href="Ficha1/ex3.html">Ficha1Ex3</a>
+      <a href="Ficha1/ex4.html">Ficha1Ex4</a>
+      <a href="Ficha2/index.html">Ficha2Ex</a>
+      <a href="Ficha3/index.html">Ficha3</a>
+    </div>
+
+    <div id="main">
+      <h2>João Nunes</h2>
+      <p>Trabalhos Laboratoriais PTW</p>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
   </body>
 </html>
