@@ -1,0 +1,27 @@
+table, td, tr{
+    border: solid 2px green;
+    border-collapse: collapse;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.tdPreto{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    width: 200px;
+}
+
+.trCinza{
+    background-color: dimgrey;
+}
+#tdWebsite{
+    text-align: center;
+}
+#tdVazia{
+    padding:12px;
+}
