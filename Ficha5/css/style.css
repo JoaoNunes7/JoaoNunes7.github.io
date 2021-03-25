@@ -1,0 +1,48 @@
+*{
+    font-family: 'Montserrat';font-size: 15px;;
+}
+body{
+    margin: 0;
+    
+}
+#primeiraDiv{
+    border-width: 20px 20px 40px 20px;
+    background-color: #424b5a;
+    font-family: 'Concert One';font-size: 15px;
+    color: white;
+    border-style: solid;
+    border-color: #424b5a;
+}
+#primeiraDiv a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#segundaDiv{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-width: 20px 20px 40px 20px;
+    padding: 20px;
+
+}
+#segundaDiv h2{
+    font-family: 'Concert One';
+    font-size: 30px;
+    color: #424b5a;
+}
+#segundaDiv p{
+    margin: 0;
+    margin-bottom: 30px;
+}
+#segundaDiv a{
+    text-decoration: none;
+    background-color: #424b5a;
+    font-family: 'Concert One';
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 15px;
+
+}
