@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>João Nunes - página pessoal</title>
     <link href="https://fonts.googleapis.com/css?family=Monteserrat" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Concert One" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -15,39 +15,44 @@
       <a href="#Horario">Horário</a>
       <a href="#Contactos">Contactos</a>
     </div>
-    <div id="segundaDiv">  
+    <div class="segundaDiv">  
     <h2>Lorem ipsum</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, vitae quaerat tempore distinctio </p>
       <a href="#SobreMim">SABER MAIS</a>
     </div>
+    <div class="terceiraDiv">
       <h3 id="SobreMim">Sobre mim</h3>
       <img src="./images/img-teste-01.png" alt="imagemTeste" />
-      <h4>Competências</h4>
+      <h4>Título</h4>
       <ul>
         <li>bbbbbbbbb</li>
         <li>sdsdsds</li>
         <li>sdasdsad</li>
       </ul>
-      <h4>Experiência</h4>
+      <h4>Título</h4>
       <ul>
         <li>bbbbbbbbb</li>
         <li>sdsdsds</li>
         <li>sdasdsad</li>
       </ul>
+    </div>
+    <div class="quartaDiv">
       <h3 id="Trabalhos">Trabalhos</h3>
       <p>Lorem ipsum dolor sit amet</p>
       <img src="./images/img-teste-01.png" alt="imagemTeste" />
       <img src="./images/img-teste-01.png" alt="imagemTeste" />
       <img src="./images/img-teste-01.png" alt="imagemTeste" />
-      <h3 id="Horario" style="position: relative; left: 5px">Horário</h3>
+    </div>
+    <div class="quintaDiv">  
+    <h3>Horário</h3>
       <table>
         <tr>
           <td></td>
-          <td><strong>Segunda</strong></td>
-          <td><strong>Terça</strong></td>
-          <td><strong>Quarta</strong></td>
-          <td><strong>Quinta</strong></td>
-          <td><strong>Sexta</strong></td>
+          <td>Segunda</td>
+          <td>Terça</td>
+          <td>Quarta</td>
+          <td>Quinta</td>
+          <td>Sexta</td>
         </tr>
         <tr>
           <td>9h-13h</td>
@@ -66,27 +71,30 @@
           <td>X</td>
         </tr>
       </table>
+    </div>
+    <div class="sextaDiv">
       <h3 id="Contactos">Contactos</h3>
       <form action="https://www.youtube.com" method="GET">
-        <input type="text" required name="nome" />
+        <input type="text" required name="nome" placeholder="Nome"/>
         <br />
         <input
           type="text"
           required
           name="email"
           pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}"
+          placeholder="Email"
         />
         <br />
-        <input type="tel" required name="numeroTel" pattern="^9[0-9]{8}" maxlength="9">
+        <input type="tel" required name="numeroTel" pattern="^9[0-9]{8}" maxlength="9" placeholder="Número de Telemóvel">
         <br />
         <select name="assunto" style="width: 170px" required>
-          <option value="" disabled selected>Selecione a opção</option>
-          <option value="A">Grau elevado</option>
-          <option value="B">Grau médio</option>
-          <option value="C">Grau baixo</option>
+          <option value="" disabled selected>Assunto</option>
+          <option value="X">X</option>
+          <option value="Y">Y</option>
+          <option value="Z">Z</option>
         </select>
         <br />
-        <textarea id="textArea" name="textArea" rows="3" cols="20" required maxlength="255"></textarea>
+        <textarea placeholder="Mensagem" id="textArea" name="textArea" rows="3" cols="20" required maxlength="255"></textarea>
         <br />
         <input type="submit" name="Enviar" value="Enviar" />
       </form>

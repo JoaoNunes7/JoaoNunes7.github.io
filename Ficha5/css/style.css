@@ -1,48 +1,143 @@
-*{
-    font-family: 'Montserrat';font-size: 15px;;
+* {
+  font-family: "Montserrat";
+  font-size: 15px;
 }
-body{
-    margin: 0;
-    
+body {
+  margin: 0;
 }
-#primeiraDiv{
-    border-width: 20px 20px 40px 20px;
-    background-color: #424b5a;
-    font-family: 'Concert One';font-size: 15px;
-    color: white;
-    border-style: solid;
-    border-color: #424b5a;
+#primeiraDiv {
+  border-width: 20px 20px 40px 20px;
+  background-color: #424b5a;
+  font-family: "Concert One";
+  font-size: 15px;
+  color: white;
+  border-style: solid;
+  border-color: #424b5a;
 }
-#primeiraDiv a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+#primeiraDiv a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
-#segundaDiv{
-    background-image: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    border-width: 20px 20px 40px 20px;
+.segundaDiv {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  border-width: 20px 20px 40px 20px;
+  padding: 20px;
+}
+.segundaDiv h2 {
+  font-family: "Concert One";
+  font-size: 30px;
+  color: #424b5a;
+}
+.segundaDiv p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.segundaDiv a {
+  text-decoration: none;
+  background-color: #424b5a;
+  font-family: "Concert One";
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+.terceiraDiv {
+  padding: 20px;
+  border-width: 20px 20px 40px 20px;
+}
+.terceiraDiv h3 {
+  font-family: "Concert One";
+  color: #424b5a;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.terceiraDiv h4 {
+  /*color:#f2f5f7*/
+  color: lightslategray;
+}
+.terceiraDiv li {
+  color: #a1aeb7;
+  list-style: square;
+}
+.quartaDiv {
+  padding: 20px;
+  border-width: 20px 20px 40px 20px;
+  background-color: #f2f5f7;
+  color: #a1aeb7;
+}
+.quartaDiv h3 {
+  font-family: "Concert One";
+  color: #424b5a;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.quintaDiv{
     padding: 20px;
+    border-width: 20px 20px 40px 20px;
 
 }
-#segundaDiv h2{
-    font-family: 'Concert One';
-    font-size: 30px;
+.quintaDiv h3{
+    font-family: "Concert One";
     color: #424b5a;
+    font-size: 20px;
+    text-transform: uppercase;
 }
-#segundaDiv p{
-    margin: 0;
-    margin-bottom: 30px;
+.quintaDiv table{
+    background-color: #f2f5f7;
+    color: #a1aeb7;
+    border-style: ridge;
+    border-width: 1px;
+    
+
 }
-#segundaDiv a{
-    text-decoration: none;
+.quintaDiv tr:nth-child(1){
+    background-color: #c2d1d9;
+    color:#424b5a;
+
+}
+.quintaDiv tr, td{
+    padding: 20px;
+    border-style: ridge;
+    border-width: 1px;
+} 
+.sextaDiv{
+    background-color: #f2f5f7;
+    padding: 20px;
+    border-width: 20px 20px 40px 20px;
+}
+.sextaDiv h3{
+    font-family: "Concert One";
+    color: #424b5a;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.sextaDiv input,textarea,select{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 10px;
+}
+.sextaDiv input[type=text]{
+    width: 200px;
+    padding: 10px;
+}
+.sextaDiv input[type="tel"]{
+    width: 200px;
+    padding: 10px;
+
+}
+.sextaDiv input[type="submit"]{
+    width: 222px;
     background-color: #424b5a;
-    font-family: 'Concert One';
-    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Concert One";
+    font-size: 16px;
     color: white;
     border-radius: 5px;
-    padding: 10px;
     padding-bottom: 15px;
 
 }
+
