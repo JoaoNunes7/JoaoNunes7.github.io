@@ -115,10 +115,15 @@ body {
     font-size: 20px;
     text-transform: uppercase;
 }
-.sextaDiv input,textarea,select{
+.sextaDiv input,textarea{
     margin-bottom: 10px;
     width: 200px;
     padding: 10px;
+}
+.sextaDiv select{
+  width: 222px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 .sextaDiv input[type=text]{
     width: 200px;
