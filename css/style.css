@@ -12,6 +12,21 @@ body{
     overflow: hidden;
 
 }
+.container p{
+    font-weight: bold;
+}
+.ulFichas{
+    list-style: none;
+}
+.ulFichas li{
+    margin-left: 25px;
+}
+.ulFichas a{
+    text-decoration: none;
+    color: steelblue;
+}
+
+
 #main-header{
     background-color: coral;
     color:#fff;
@@ -36,7 +51,8 @@ body{
 }
 #showcase{
     background-image: url('../images/imagemFundo.jpeg');
-    background-position: center right;
+    background-size: cover;
+    background-position: center;
     min-height: 300px;
     margin-bottom: 30px;
     text-align: center;
