@@ -1,0 +1,244 @@
+* {
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+body {
+  margin: auto;
+  width: 700px;
+}
+#primeiraDiv {
+  border-width: 20px 20px 40px 20px;
+  background-color: #424b5a;
+  font-family: "Concert One";
+  font-size: 15px;
+  color: white;
+  border-style: solid;
+  border-color: #424b5a;
+}
+#primeiraDiv h4{
+  float: left;
+  margin: 0px;
+}
+#primeiraDiv a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-right: 20px;
+}
+.segundaDiv {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: right;
+  border-width: 20px 20px 40px 20px;
+  padding: 20px;
+  height: 350px;
+  position: relative;
+}
+.segundaDiv h2 {
+  font-family: "Concert One";
+  font-size: 30px;
+  color: #424b5a;
+  position: absolute;
+  top: 150px;
+}
+.segundaDiv p {
+  margin: 0;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 225px;
+  left: 22px;
+  width: 300px;
+}
+.segundaDiv a {
+  text-decoration: none;
+  background-color: #424b5a;
+  font-family: "Concert One";
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 280px;
+}
+.terceiraDiv {
+  padding: 20px;
+  border-width: 20px 20px 40px 20px;
+  height: 400px;
+  position: relative;
+}
+.terceiraDiv img{
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.terceiraDiv h3 {
+  font-family: "Concert One";
+  color: #424b5a;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#tercDivPrimh4{
+  /*color:#f2f5f7*/
+  color: lightslategray;
+  position: absolute;
+  top: 120px;
+  left: 360px;
+}
+#tercDivSegh4{
+  /*color:#f2f5f7*/
+  color: lightslategray;
+  position: absolute;
+  top: 215px;
+  left: 360px;
+}
+#primeiraUl{
+  color: #a1aeb7;
+  list-style: square;
+  position: absolute;
+  top: 155px;
+  left: 340px;
+}
+#segundaUl{
+  color: #a1aeb7;
+  list-style: square;
+  position: absolute;
+  top: 250px;
+  left: 340px;
+}
+.quartaDiv {
+  padding: 20px;
+  border-width: 20px 20px 40px 20px;
+  background-color: #f2f5f7;
+  height: 400px;
+  color: #a1aeb7;
+  position: relative;
+}
+.quartaDiv h3 {
+  font-family: "Concert One";
+  color: #424b5a;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.quartaDiv p{
+  text-align: center;
+}
+.img3EmLinha{
+  position: absolute;
+  left: 70px;
+}
+.img3EmLinha img{
+  margin: 2px;
+}
+.quintaDiv{
+    padding: 20px;
+    border-width: 20px 20px 40px 20px;
+
+}
+.quintaDiv p{
+  color: #a1aeb7;
+  text-align: center;
+  width: auto;
+
+}
+.quintaDiv h3{
+    font-family: "Concert One";
+    color: #424b5a;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.quintaDiv table{
+    background-color: #f2f5f7;
+    color: #a1aeb7;
+    border-style: ridge;
+    border-width: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+    width: 100%;
+    
+
+}
+.quintaDiv tr:nth-child(1){
+    background-color: #c2d1d9;
+    color:#424b5a;
+
+}
+.quintaDiv tr, td{
+    padding: 13px;
+    border: 1px solid #a1aeb7;
+  } 
+.sextaDiv{
+    background-color: #f2f5f7;
+    padding: 20px;
+    border-width: 20px 20px 40px 20px;
+    height: 550px;
+}
+.sextaDiv h3{
+    font-family: "Concert One";
+    color: #424b5a;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sextaDiv input,textarea{
+    margin-bottom: 10px;
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sextaDiv select{
+  width: 272px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.sextaDiv input[type=text]{
+    width: 250px;
+    padding: 10px;
+}
+.sextaDiv input[type="tel"]{
+    width: 250px;
+    padding: 10px;
+
+}
+.sextaDiv input[type="submit"]{
+    width: 272px;
+    background-color: #424b5a;
+    text-transform: uppercase;
+    font-family: "Concert One";
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+}
+.footer{
+  background-color: white;
+  border-width: 20px 20px 40px 20px;
+  padding: 20px;
+  color:#424b5a;
+  font-size: 10px;
+}
+.footer p{
+  margin-top: 20px;
+  margin-left: 260px;
+}
+
+.footer img{
+  width: 20px;
+  margin-right: 10px;
+}
+#imagensRedes{
+  margin-top:20px;
+  margin-left: 275px;
+}
+
