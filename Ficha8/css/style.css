@@ -1,0 +1,66 @@
+.container{
+    width: min-content;
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+}
+.textBoxs{
+    position: relative;
+}
+.textBoxs h2{
+    margin: 0 auto;   
+}
+#contaLabel{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+#resultadoLabel{
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+#conta{
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    border: 1px solid slategrey;
+    width: 150px;
+    height: 25px;
+}
+#resultado{
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    border: 1px solid slategrey;
+    width: 150px;
+    height: 25px;
+}
+#textoCalculadora{
+    text-align: center;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+.botoes{
+    margin-top: 70px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 55px 55px 55px 55px;
+    grid-template-rows: 55px 55px 55px;
+    align-content: center;
+    justify-content: center;
+ 
+}
+.botoes div{
+    background-color: green;
+    color: white;
+    visibility: visible;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    line-height: 50px;
+    cursor: pointer;
+}
