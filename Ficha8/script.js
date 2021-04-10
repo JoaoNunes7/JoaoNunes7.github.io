@@ -3,6 +3,8 @@ var numeros = div.getElementsByTagName("div");
 
 for (let i = 0; i < numeros.length; i++) {
   numeros[i].addEventListener("click", calculadora);
+  numeros[i].addEventListener("mouseover", mudaCor);
+  numeros[i].addEventListener("mouseout", mudaCor);
 }
 function calculadora(numero) {
   let caixaConta = document.getElementById("conta");
@@ -64,4 +66,13 @@ function calculadora(numero) {
       caixaConta.innerText += "/";
       break;
   }
+}
+function mudaCor(numero){
+    if(numero.type === "mouseout"){
+        numero.target.style.backgroundColor = "green";
+        return;
+    }
+    if(numero.type === "mouseover"){
+        numero.target.style.backgroundColor = "grey";
+    }
 }
