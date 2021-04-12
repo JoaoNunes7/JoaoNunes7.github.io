@@ -1,6 +1,6 @@
 var quantidade = prompt("Introduza a quantidade de números (min: 10, max: 50)");
 while(quantidade > 50 || quantidade < 10){
-    quantidade = prompt("Introduza a quantidade de números (min: 9, max: 50)");
+    quantidade = prompt("Introduza a quantidade de números (min: 10, max: 50)");
 }
 
 var div = document.getElementById("caixaCalculadora");
