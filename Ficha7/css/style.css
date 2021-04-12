@@ -4,7 +4,7 @@
 }
 body {
   margin: auto;
-  width: 700px;
+  width: auto;
 }
 #primeiraDiv {
   border-width: 20px 20px 40px 20px;
@@ -127,8 +127,10 @@ body {
   text-align: center;
 }
 .img3EmLinha{
+  display: grid;
+  grid-template-columns: auto auto auto;
   position: absolute;
-  left: 70px;
+  left: 550px;
 }
 .img3EmLinha img{
   margin: 2px;
@@ -159,7 +161,10 @@ body {
     border-collapse: collapse;
     text-align: center;
     table-layout: auto;
-    width: 100%;
+    width: 70%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     
 
 }
@@ -227,10 +232,12 @@ body {
   padding: 20px;
   color:#424b5a;
   font-size: 10px;
+  position: relative;
 }
 .footer p{
-  margin-top: 20px;
-  margin-left: 260px;
+  position: absolute;
+  top: 50px;
+  left: 765px;
 }
 
 .footer img{
@@ -238,7 +245,7 @@ body {
   margin-right: 10px;
 }
 #imagensRedes{
-  margin-top:20px;
-  margin-left: 275px;
+  position: absolute;
+  left: 775px;
 }
 
