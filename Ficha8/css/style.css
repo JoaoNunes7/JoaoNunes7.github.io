@@ -64,3 +64,6 @@
     line-height: 50px;
     cursor: pointer;
 }
+.letrasAdivinhadas div{
+    border:1px solid black;
+}
