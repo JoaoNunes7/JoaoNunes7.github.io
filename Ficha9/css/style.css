@@ -1,0 +1,114 @@
+body{
+    background-color: grey;
+}
+.container{
+    position: relative;
+    top: 50px;
+    width: min-content;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 700px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo{
+    position: relative;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    height: 75px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.titulo p{
+    position: absolute;
+    left: 375px;
+    bottom: 20px;
+    margin: 0px;
+}
+.titulo img{
+    position: absolute;
+    left: 625px;
+    top: 15px;
+}
+.desenho{
+    position: relative;
+}
+#primeiraImagem{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    filter: opacity(15%);
+}
+.errado1{
+    position: absolute;
+    top: 249px;
+    left: 44px;
+}
+.errado2{
+    position: absolute;
+    top: 249px;
+    left: 42px;
+}
+.errado3{
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+.errado4{
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+.errado5{
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+.errado6{
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+.errado7{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.botoes{
+    position: absolute;
+    left: 330px;
+    top: 150px;
+    display: grid;
+    grid-template-columns: 51px 51px 51px 51px 51px 51px 51px;
+    grid-template-rows: 51px 51px 51px 51px;
+}
+.botoes div{
+    border: 1px solid slategrey;
+    width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+#linhasLetras{
+    position: relative;
+    top: 280px;
+    left: 320px;
+}
+.letrasAdivinhadas{
+    display: inline-block;
+    border-bottom: 2px solid slategrey;
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
