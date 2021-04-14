@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de tarefas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='./css/style.css'>
+    <link rel="stylesheet" href="./dtsel-master/dtsel.css" />
+    <script src="./dtsel-master/dtsel.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Lista de Tarefas</h2>
+        <div class="caixasTexto">
+            <div id="nomeTarefa" contenteditable="true" placeholder="Nome da tarefa..."></div>
+            <!--div id="dataTarefa" contenteditable="true" placeholder="Data da tarefa..." name="dateTimePicker"></div>-->
+            <input type="text" placeholder="Data da tarefa" name="dateTimePicker" id="dataTarefa">
+            <div id="mais">+</div>
+        </div>
+        <div id="linhasTarefas"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
