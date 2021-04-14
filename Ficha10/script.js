@@ -28,17 +28,17 @@ function adicionarTarefa() {
     caixaDataTarefa.value = "";
   }
 }
-function eliminarTarefa(element) {
-  element.parentNode.parentNode.removeChild(element.parentNode);
-}
 function editarTarefa(element) {
   element.target.style.backgroundColor = "black";
   element.target.style.color = "white";
   element.target.setAttribute("contenteditable", true);
-  botaoAdicionar.innerText = "v";
+
   botaoAdicionar.addEventListener("click", function () {
     element.target.style.backgroundColor = "white";
     element.target.style.color = "orange";
-    botaoAdicionar.innerText = "+";
+
   });
+}
+function eliminarTarefa(element) {
+  element.parentNode.parentNode.removeChild(element.parentNode);
 }
