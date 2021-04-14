@@ -44,6 +44,7 @@ function escolhido(botao){
    while(tentativas>0){
      if(palavra.includes(botao.target.innerText)){
         let divLetra = document.getElementsByName(botao.target.innerText);
+        botao.target.style.color = "green"
         botao.target.style.pointerEvents = "none";
         for(let i = 0; i<=divLetra.length; i++){
           divLetra[i].innerText = botao.target.innerText;
