@@ -17,12 +17,12 @@ function adicionarTarefa() {
 
   if (tarefa.length > 0 && data.length > 0) {
     caixaLinhasTarefas.innerHTML +=
-      "<div class='tarefas'>" +
+      "<div class='tarefas'><div class='textoTarefa'>" +
       tarefa +
       " (" +
       data +
-      ")<div id='menos' contentEditable='false' onclick='eliminarTarefa(this)'>-</div></div>";
-    let divTarefa = caixaLinhasTarefas.getElementsByTagName("div");
+      ")</div><div id='menos' contentEditable='false' onclick='eliminarTarefa(this)'>-</div></div>";
+    let divTarefa = caixaLinhasTarefas.getElementsByClassName ("textoTarefa");
     for (let i = 0; i < divTarefa.length; i++) {
       divTarefa[i].addEventListener("click", editarTarefa);
     }
@@ -31,10 +31,11 @@ function adicionarTarefa() {
   }
 }
 function editarTarefa(element) {
+  div = element.target.parentNode;
   botaoAdicionar.style.display = "none";
   botaoValidar.style.display = "block";
-  element.target.style.backgroundColor = "black";
-  element.target.style.color = "white";
+  div.style.backgroundColor = "black";
+  div.style.color = "white";
   //element.target.setAttribute("contenteditable", true);
 
   botaoValidar.addEventListener("click", function () {
@@ -42,9 +43,13 @@ function editarTarefa(element) {
     let data = caixaDataTarefa.value;
     botaoValidar.style.display = "none";
     botaoAdicionar.style.display = "block"
-    element.target.style.backgroundColor = "white";
-    element.target.style.color = "orange";
-    element.target.innerHTML =  tarefa + " (" + data + ")<div id='menos' contentEditable='false' onclick='eliminarTarefa(this)'>-</div></div>";
+    div.style.backgroundColor = "white";
+    div.style.color = "orange";
+    div.innerHTML =  "<div class='textoTarefa'>" +
+    tarefa +
+    " (" +
+    data +
+    ")</div><div id='menos' contentEditable='false' onclick='eliminarTarefa(this)'>-</div>";
   });
 }
 function eliminarTarefa(element) {
