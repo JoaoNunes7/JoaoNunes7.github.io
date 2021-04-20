@@ -13,8 +13,12 @@ var linhaLetras = document.getElementById("linhasLetras");
 var cont = 0;
 
 console.log(palavra);
-for(i = 0; i<palavra.length;i++){
-  linhaLetras.innerHTML +="<div class=letrasAdivinhadas name="+palavra[i]+" ></div>"
+for(let i = 0; i<palavra.length;i++){
+  linhaLetras.innerHTML +="<div class=letrasAdivinhadas></div>"
+}
+var divLetra = linhaLetras.getElementsByClassName("letrasAdivinhadas");
+for(let i=0;i<palavra.length;i++){
+  divLetra[i].innerText = palavra.charAt(i);
 }
 /*var divs = linhaLetras.getElementsByTagName('div');
 for(let i = 0; i<divs.length;i++){
@@ -40,17 +44,16 @@ function mudaCor(botao) {
 }
 var tentativas = 7;
 function escolhido(botao){
-  var divsLetras = linhaLetras.getElementsByClassName("letrasAdivinhadas");
    while(tentativas>0){
      if(palavra.includes(botao.target.innerText)){
-        let divLetra = document.getElementsByName(botao.target.innerText);
         botao.target.style.color = "green"
         botao.target.style.pointerEvents = "none";
-        for(let i = 0; i<=divLetra.length; i++){
-          divLetra[i].innerText = botao.target.innerText;
-          divLetra[i].style.color = "red";
-          cont++;
-          console.log(cont);
+        for(let i = 0; i<=palavra.length; i++){
+          if(divLetra[i].innerText.includes(botao.target.innerText)){
+            divLetra[i].style.color = "red";
+            cont++;
+            console.log(cont);
+          }
           if(cont == palavra.length){
             break;
         } 
@@ -94,4 +97,3 @@ function escolhido(botao){
    palavraAdivinhada += divsLetras[i].innerText;
   }
   console.log(palavraAdivinhada);*/
-
