@@ -60,4 +60,6 @@ function editarTarefa(element) {
 }
 function eliminarTarefa(element) {
   element.parentNode.parentNode.removeChild(element.parentNode);
+  botaoValidar.style.display = "none"
+  botaoAdicionar.style.display = "block"
 }
