@@ -56,10 +56,14 @@ function editarTarefa(element) {
     " (" +
     data +
     ")</div><div id='menos' contentEditable='false' onclick='eliminarTarefa(this)'>-</div>";
+    caixaNomeTarefa.innerText = ""
+    caixaDataTarefa.value = ""
   });
 }
 function eliminarTarefa(element) {
   element.parentNode.parentNode.removeChild(element.parentNode);
   botaoValidar.style.display = "none"
   botaoAdicionar.style.display = "block"
+  caixaNomeTarefa.innerText = ""
+  caixaDataTarefa.value = ""
 }
