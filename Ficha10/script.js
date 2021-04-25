@@ -14,6 +14,7 @@ var listaTarefas = caixaLinhasTarefas.getElementsByTagName("div");
 function adicionarTarefa() {
   let tarefa = caixaNomeTarefa.innerText;
   let data = caixaDataTarefa.value;
+  caixaLinhasTarefas = document.getElementById("linhasTarefas");
 
   if (tarefa.length > 0 && data.length > 0) {
     caixaLinhasTarefas.innerHTML +=
@@ -31,7 +32,7 @@ function adicionarTarefa() {
   }
 }
 function editarTarefa(element) {
-  div = element.parentNode;
+  var div = element.parentElement;
   botaoAdicionar.style.display = "none";
   botaoValidar.style.display = "block";
   div.style.backgroundColor = "black";
@@ -45,19 +46,18 @@ function editarTarefa(element) {
   //element.target.setAttribute("contenteditable", true);
 
   botaoValidar.addEventListener("click", function () {
-    let tarefa = caixaNomeTarefa.innerText;
-    let data = caixaDataTarefa.value;
+    tarefa = caixaNomeTarefa.innerText;
+    data = caixaDataTarefa.value;
     botaoValidar.style.display = "none";
     botaoAdicionar.style.display = "block"
     div.style.backgroundColor = "white";
     div.style.color = "orange";
+    console.log(element.parentNode);
     div.innerHTML =  "<div class='textoTarefa' onclick='editarTarefa(this)'>" +
     tarefa +
     " (" +
     data +
     ")</div><div id='menos' contentEditable='false' onclick='eliminarTarefa(this)'>-</div>";
-    caixaNomeTarefa.innerText = ""
-    caixaDataTarefa.value = ""
   });
 }
 function eliminarTarefa(element) {
