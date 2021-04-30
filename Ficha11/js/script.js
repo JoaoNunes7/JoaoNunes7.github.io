@@ -82,7 +82,12 @@ function vencedor() {
   for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
     if (botoes[i].className == "botoes bola") {
       contaBolas++;
+      contaCelulas++;
     } else {
+      contaBolas = 0;
+    }
+    if(contaCelulas == 4 & contaBolas == 3){
+      contaCelulas = 0;
       contaBolas = 0;
     }
     if (contaBolas == 3) {
@@ -93,11 +98,16 @@ function vencedor() {
       setTimeout("location.reload(true);", 2000);
     }
   }
+  contaCelulas = 0;
   for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
     if (botoes[i].className == "botoes cruz") {
       contaCruz++;
     } else {
       contaCruz = 0;
+    }
+    if(contaCelulas == 4 & contaBolas == 3){
+      contaCelulas = 0;
+      contaBolas = 0;
     }
     if (contaCruz == 3) {
       footer.style.display = "block";
@@ -155,7 +165,7 @@ function vencedor() {
   }
 
   //Verificação diagonais
-  for (let i = 0; i < tamanho.innerText; i++) {
+  for (let i = 0; i < tamanho.innerText*tamanho.innerText; i++) {
     contaBolas = 0;
     for (
       let j = i;
@@ -177,7 +187,7 @@ function vencedor() {
       }
     }
   }
-  for (let i = 0; i < tamanho.innerText; i++) {
+  for (let i = 0; i < tamanho.innerText*tamanho.innerText; i++) {
     contaCruz = 0;
     for (
       let j = i;
