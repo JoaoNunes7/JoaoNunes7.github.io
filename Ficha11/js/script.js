@@ -81,16 +81,16 @@ function vencedor() {
   let contaCruz = 0;
   let botoes = gridGalo.getElementsByClassName("botoes");
 
-  let contaCelulas = 0;
+  var contaCelulas = 0;
   //Verificação linhas
   for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
+    contaCelulas++;
     if (botoes[i].className == "botoes bola") {
       contaBolas++;
-      contaCelulas++;
     } else {
       contaBolas = 0;
     }
-    if ((contaCelulas == 4) & (contaBolas == 3)) {
+    if ((contaCelulas > 3) && (contaBolas == 3)) {
       contaCelulas = 0;
       contaBolas = 0;
     }
@@ -104,14 +104,15 @@ function vencedor() {
   }
   contaCelulas = 0;
   for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
+    contaCelulas++;
     if (botoes[i].className == "botoes cruz") {
       contaCruz++;
     } else {
       contaCruz = 0;
     }
-    if ((contaCelulas == 4) & (contaBolas == 3)) {
+    if ((contaCelulas > 3) && (contaCruz == 3)) {
       contaCelulas = 0;
-      contaBolas = 0;
+      contaCruz = 0;
     }
     if (contaCruz == 3) {
       footer.style.display = "block";
