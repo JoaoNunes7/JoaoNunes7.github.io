@@ -7,25 +7,29 @@ footer.style.display = "none";
 var textoJogador = document.getElementById("mostrarJogador");
 var jogadorX = true;
 var jogadorO = false;
+var textoTamanho = document.getElementById("textoTamanho");
 
 var timer;
 
 function dimensaoTabela() {
-  gridGalo.innerHTML = "";
-  gridGalo.setAttribute(
-    "style",
-    "grid-template-columns: repeat(" + tamanho.innerText + ", auto)"
-  );
-  for (i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
-    gridGalo.innerHTML += "<div class=botoes></div>";
+  if(tamanho.innerText  > 2 & tamanho.innerText< 23){
+    gridGalo.innerHTML = "";
+    gridGalo.setAttribute(
+      "style",
+      "grid-template-columns: repeat(" + tamanho.innerText + ", auto)"
+    );
+    for (i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
+      gridGalo.innerHTML += "<div class=botoes></div>";
+    }
+    var botoes = gridGalo.getElementsByClassName("botoes");
+    for (i = 0; i < botoes.length; i++) {
+      botoes[i].addEventListener("click", jogar);
+    }
+    clearInterval(timer);
+    timer = setInterval(frame, 100);
   }
-  var botoes = gridGalo.getElementsByClassName("botoes");
-  for (i = 0; i < botoes.length; i++) {
-    botoes[i].addEventListener("click", jogar);
-  }
-  clearInterval(timer);
-  timer = setInterval(frame, 100);
 }
+
 tamanho.addEventListener("input", dimensaoTabela);
 gridGalo.addEventListener("click", vencedor);
 
@@ -86,7 +90,7 @@ function vencedor() {
     } else {
       contaBolas = 0;
     }
-    if(contaCelulas == 4 & contaBolas == 3){
+    if ((contaCelulas == 4) & (contaBolas == 3)) {
       contaCelulas = 0;
       contaBolas = 0;
     }
@@ -105,7 +109,7 @@ function vencedor() {
     } else {
       contaCruz = 0;
     }
-    if(contaCelulas == 4 & contaBolas == 3){
+    if ((contaCelulas == 4) & (contaBolas == 3)) {
       contaCelulas = 0;
       contaBolas = 0;
     }
@@ -165,7 +169,7 @@ function vencedor() {
   }
 
   //Verificação diagonais
-  for (let i = 0; i < tamanho.innerText*tamanho.innerText; i++) {
+  for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
     contaBolas = 0;
     for (
       let j = i;
@@ -187,7 +191,7 @@ function vencedor() {
       }
     }
   }
-  for (let i = 0; i < tamanho.innerText*tamanho.innerText; i++) {
+  for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
     contaCruz = 0;
     for (
       let j = i;
