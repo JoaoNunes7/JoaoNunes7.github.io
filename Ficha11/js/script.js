@@ -81,18 +81,35 @@ function vencedor() {
   let contaCruz = 0;
   let botoes = gridGalo.getElementsByClassName("botoes");
 
-  var contaCelulas = 0;
+
+  //VER EMPATE
+  let contEmpate = 0;
+  for(let i =0;i< tamanho.innerText*tamanho.innerText;i++){
+    if(botoes[i].className=="botoes cruz" || botoes[i].className == "botoes bola"){
+      contEmpate++;
+    }
+  }
+  if(contEmpate == tamanho.innerText*tamanho.innerText){
+        footer.style.display = "block";
+        footer.innerText = "Empate";
+        footer.scrollIntoView();
+        clearInterval(timer);
+        setTimeout("location.reload(true);", 2000);
+  }
+
+
   //Verificação linhas
-  for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
-    contaCelulas++;
+  /*for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
     if (botoes[i].className == "botoes bola") {
       contaBolas++;
     } else {
       contaBolas = 0;
     }
-    if ((contaCelulas > 3) && (contaBolas == 3)) {
-      contaCelulas = 0;
+    
+    if (contaLinhas == i) {
       contaBolas = 0;
+      contaLinhas+=parseFloat(tamanho.innerText);
+      console.log(contaLinhas);
     }
     if (contaBolas == 3) {
       footer.style.display = "block";
@@ -101,27 +118,44 @@ function vencedor() {
       clearInterval(timer);
       setTimeout("location.reload(true);", 2000);
     }
+  }*/
+  for(let i=0;i<tamanho.innerText*tamanho.innerText;i=i+parseInt(tamanho.innerText)){
+    for(j = i;j<i+parseInt(tamanho.innerText);j++){ 
+      console.log(j);
+      if (botoes[j].className == "botoes bola") {
+        contaBolas++;
+      } else {
+        contaBolas = 0;
+      }
+      if (contaBolas == 3) {
+        footer.style.display = "block";
+        footer.innerText = "O jogador 0 ganhou!";
+        footer.scrollIntoView();
+        clearInterval(timer);
+        setTimeout("location.reload(true);", 2000);
+    }
+    }
+    contaBolas = 0;
   }
-  contaCelulas = 0;
-  for (let i = 0; i < tamanho.innerText * tamanho.innerText; i++) {
-    contaCelulas++;
-    if (botoes[i].className == "botoes cruz") {
-      contaCruz++;
-    } else {
-      contaCruz = 0;
+  
+  for(let i=0;i<tamanho.innerText*tamanho.innerText;i=i+parseInt(tamanho.innerText)){
+    for(j = i;j<i+parseInt(tamanho.innerText);j++){ 
+      if (botoes[j].className == "botoes cruz") {
+        contaCruz++;
+      } else {
+        contaCruz = 0;
+      }
+      if (contaCruz == 3) {
+        footer.style.display = "block";
+        footer.innerText = "O jogador X ganhou!";
+        footer.scrollIntoView();
+        clearInterval(timer);
+        setTimeout("location.reload(true);", 2000);
     }
-    if ((contaCelulas > 3) && (contaCruz == 3)) {
-      contaCelulas = 0;
-      contaCruz = 0;
     }
-    if (contaCruz == 3) {
-      footer.style.display = "block";
-      footer.innerText = "O jogador X ganhou!";
-      footer.scrollIntoView();
-      clearInterval(timer);
-      setTimeout("location.reload(true);", 2000);
-    }
+    contaCruz = 0;
   }
+
   let tamanhoInt = 0;
   tamanhoInt = parseFloat(tamanho.innerText);
 
@@ -178,7 +212,6 @@ function vencedor() {
       j += tamanhoInt + 1
     ) {
       if (botoes[j].className == "botoes bola") {
-        console.log(contaBolas);
         contaBolas++;
       } else {
         contaBolas = 0;
@@ -255,4 +288,5 @@ function vencedor() {
       }
     }
   }
+  
 }
