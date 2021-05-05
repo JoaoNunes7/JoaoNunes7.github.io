@@ -120,8 +120,8 @@ function vencedor() {
     }
   }*/
   for(let i=0;i<tamanho.innerText*tamanho.innerText;i=i+parseInt(tamanho.innerText)){
+    contaBolas = 0;
     for(j = i;j<i+parseInt(tamanho.innerText);j++){ 
-      console.log(j);
       if (botoes[j].className == "botoes bola") {
         contaBolas++;
       } else {
@@ -132,13 +132,13 @@ function vencedor() {
         footer.innerText = "O jogador 0 ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
     }
     }
-    contaBolas = 0;
   }
   
   for(let i=0;i<tamanho.innerText*tamanho.innerText;i=i+parseInt(tamanho.innerText)){
+    contaCruz = 0;
     for(j = i;j<i+parseInt(tamanho.innerText);j++){ 
       if (botoes[j].className == "botoes cruz") {
         contaCruz++;
@@ -150,10 +150,9 @@ function vencedor() {
         footer.innerText = "O jogador X ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
     }
     }
-    contaCruz = 0;
   }
 
   let tamanhoInt = 0;
@@ -177,7 +176,7 @@ function vencedor() {
         footer.innerText = "O jogador 0 ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
       }
     }
   }
@@ -198,7 +197,7 @@ function vencedor() {
         footer.innerText = "O jogador X ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
       }
     }
   }
@@ -211,9 +210,13 @@ function vencedor() {
       j < tamanho.innerText * tamanho.innerText;
       j += tamanhoInt + 1
     ) {
+      let botao = botoes[j];
       if (botoes[j].className == "botoes bola") {
         contaBolas++;
       } else {
+        contaBolas = 0;
+      }
+      if(botoes[j-2] === botao){
         contaBolas = 0;
       }
       if (contaBolas == 3) {
@@ -221,7 +224,7 @@ function vencedor() {
         footer.innerText = "O jogador 0 ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
       }
     }
   }
@@ -232,30 +235,37 @@ function vencedor() {
       j < tamanho.innerText * tamanho.innerText;
       j += tamanhoInt + 1
     ) {
+      let botao = botoes[j];
       if (botoes[j].className == "botoes cruz") {
         contaCruz++;
       } else {
         contaCruz = 0;
+      }
+      if(botoes[j-2] ===  botao){
+        contaCurz = 0;
       }
       if (contaCruz == 3) {
         footer.style.display = "block";
         footer.innerText = "O jogador X ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
       }
     }
   }
-  for (let i = tamanhoInt; i > 0; i--) {
+  for (let i = tamanhoInt-1; i > 0; i--) {
     contaBolas = 0;
     for (
       let j = i;
-      j < tamanho.innerText * tamanho.innerText;
-      j += tamanhoInt - 1
+      j < tamanhoInt*tamanhoInt;
+      j += tamanhoInt -1
     ) {
       if (botoes[j].className == "botoes bola") {
         contaBolas++;
       } else {
+        contaBolas = 0;
+      }
+      if((botoes[5].className=="botoes bola") && (botoes[3].className=="botoes bola")){
         contaBolas = 0;
       }
       if (contaBolas == 3) {
@@ -263,7 +273,7 @@ function vencedor() {
         footer.innerText = "O jogador O ganhou!";
         footer.scrollIntoView();
         clearInterval(timer);
-        setTimeout("location.reload(true);", 2000);
+        setTimeout("location.reload(true);", 5000);
       }
     }
   }
@@ -277,6 +287,9 @@ function vencedor() {
       if (botoes[j].className == "botoes cruz") {
         contaCruz++;
       } else {
+        contaCruz = 0;
+      }
+      if((botoes[5].className=="botoes cruz") && (botoes[3].className=="botoes cruz")){
         contaCruz = 0;
       }
       if (contaCruz == 3) {
