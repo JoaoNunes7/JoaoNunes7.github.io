@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Ficha 12</title>
+</head>
+<body>
+    <select class="opcoes" id="selectOpcoes">
+        <option value="" disabled selected>Selecione uma opção...</option>
+        <option value="RegistosConstantes">Lista com todos os registos de utilizações constantes</option>
+        <option value="UtilizacoesAno">Lista com número de utilizações por ano e por certificado</option>
+    </select>    
+    <input type="submit" value="Confirmar Seleção" id="btnConfirmar">
+    <table id="registosConstantes" class="registosConstantes">
+            <th>Ano</th>
+            <th>Mês</th>
+            <th>Chave Móvel Digital</th>
+            <th>Cartão de Cidadão</th>
+            <th>Advogado</th>
+            <th>Solicitador</th>
+    </table>
+    <table class="utilizacoesAno" id="registosAno">
+        <th>Ano</th>
+        <th>Chave Móvel Digital</th>
+        <th>Cartão de Cidadão</th>
+        <th>Advogado</th>
+        <th>Solicitador</th>
+        <th>Notário</th>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
