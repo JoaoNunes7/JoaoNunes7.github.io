@@ -1,10 +1,14 @@
+table, th, td, tr{
+    border: 1px groove;
+}
 .registosConstantes{
+    border: 1px groove;
     margin-top: 20px;
-    border: 1px solid black;
     display: none;
+    width: fit-content;
 }
 .utilizacoesAno{
     margin-top: 20px;
-    border:1px solid black;
     display: none;
+    width: fit-content;
 }
