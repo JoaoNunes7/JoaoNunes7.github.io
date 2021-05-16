@@ -26,7 +26,7 @@ function resultado(){
         var ano = parseInt(prompt("Introduza um ano"));
         console.log(ano);
         tabelaAno.style.display = "block";
-        tabelaAno.innerHTML = "";
+        tabelaAno.innerHTML = " <th>Ano</th> <th>Chave Móvel Digital</th> <th>Cartão de Cidadão</th> <th>Advogado</th><th>Solicitador</th> <th>Notário</th>"
         tabelaConstante.style.display = "none";
         fetch('Autenticacoes-Evolucao-por-Certificado.json')
         .then(response => response.json())
