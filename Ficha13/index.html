@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Lista de utilizadores</title>
+  </head>
+  <body>
+    <form method="POST" class="form" id="formulario">
+      <label>Utilizador: </label><input type="text" name="txtUser" id="txtUser"/>
+      <label>Nome: </label
+      ><input type="text" name="txtNome" id="txtNome" /><br /><br />
+      <label>Password: </label
+      ><input type="password" name="txtPassword" id="txtPassword" />
+      <label>Idade: </label><input type="number" name="idade" id="txtIdade" />
+      <label>Categoria: </label
+      ><select name="categorias" id="select">
+        <option value="" disabled selected>Selecione a categoria</option>
+        <option value="1">Tecnico Informatico</option>
+        <option value="2">Estudante</option>
+        <option value="3">Administrador de BD</option>
+        <option value="4">Programador</option>
+        <option value="5">Analista de Sistemas</option>
+      </select>
+    </form>
+    <div class="containerBtn">
+      <input type="submit" value="Eliminar" class="btn eliminar" form="formulario" id="btnEliminar"/><input type="submit" value="Gravar" class="btn" form="formulario" id="btnGravar"/><input type="submit" value="Gravar" class="btn" form="formulario" id="btnGravarEditar"/>
+      <input type="reset" value="Reset" class="btn" form="formulario" />
+    </div>
+    <h2>Lista de utilizadores</h2>
+    <div id="container" class="content"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

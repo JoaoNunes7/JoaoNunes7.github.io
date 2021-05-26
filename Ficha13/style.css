@@ -1,0 +1,51 @@
+.content{
+    margin-left: 40px;
+    width: fit-content;
+}
+
+.form{
+    width: fit-content;
+    margin: 20px 0px 0px 0px;
+    border: 1px solid grey;
+    padding: 20px;
+
+}
+
+hr{
+    margin: 0px;
+    width: 400px;
+}
+.utilizadores{
+    height: 25px;
+    border-top: 1px solid black;
+    line-height: 25px;
+    vertical-align: center;
+}
+
+#txtNome{
+    width: 350px;
+}
+#txtPassword{
+    margin-left: 2px;
+}
+#txtIdade{
+    width: 50px;
+}
+
+.btn{
+    margin-top: 10px;
+    border: currentColor;
+    width: 75px;
+    padding: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: yellowgreen;
+}
+.btn:hover{
+    outline:0;
+    font-weight: bold;
+}
+
+#btnEliminar{
+    margin-right: 4px;
+}
