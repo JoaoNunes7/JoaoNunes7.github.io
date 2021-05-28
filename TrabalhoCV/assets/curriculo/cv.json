@@ -1,0 +1,106 @@
+{
+    "basics": {
+      "nome": "João Carlos Paiva Fonseca Nunes",
+      "profissao": "Estudante Universitário",
+      "picture": "",
+      "email": "joaocarlosnunes@ua.pt",
+      "nascimento": "19 de Junho de 2000",
+      "telemovel": "+351 913541907",
+      "site": "https://joaonunes7.github.io./",
+      "sumario": "Estudante universitário na UA no curso de TI, com 2 estágios feitos e com ambição de seguir WEB Development ",
+      "localizacao": {
+        "endereço": "Rua das Quebradas, Nº104, 1ºEsq",
+        "codigopostal": "4410-361, Arcozelo, Vila Nova de Gaia",
+        "cidade": "Porto",
+        "pais": "Portugal",
+        "regiao": "Norte"
+      },
+      "redesSociais": [
+        "https://www.facebook.com/joao.nunes.carlos/",
+        "https://www.instagram.com/joaocarlinhos7/", 
+        "https://github.com/JoaoNunes7"
+
+      ]
+    },
+    "trabalho": [{
+      "empresa": "Escola Superior de Tecnologias e Gestão de Águeda",
+      "posicao": "Estudante",
+      "website": "https://www.ua.pt/pt/estga",
+      "dataInicio": "2019-08-01",
+      "dataFim": "A terminar....",
+      "curso": "Tecnologias da Informação"
+    }],
+    "educacao": {
+      "instituicao": "Colégio de Gaia, Porto",
+      "area": "Curso Tecnologias e Sistemas de Informação",
+      "dataInicio": "2016",
+      "dataFim": "2018",
+      "anoEscolaridade": "12º Ano",
+      "introducao": "O curso está concebido de modo a que o aluno fique habilitado a desenvolver aplicações e soluções de adaptação informáticas, para suportar situações de trabalho organizacional, combinando as tecnologias de informação e de comunicação e os conceitos organizacionais inerentes às boas práticas da gestão empresarial e assessoria.",
+      "mediafinal": "15",
+      "disciplinasgerais": [
+        "Português", 
+        "Matemática A", 
+        "Filosofia", 
+        "Inglês",
+        "Educação Física", 
+        "Economia A"
+      ],
+      "disciplinastecnicas":[ 
+          "Ferramentas de Produtividade",
+          "Desenvolvimento de Aplicações Informáticas",
+          "Laboratório de Redes e Serviços de Apoio às Organizações",
+          "Tecnologias e Programação WEB",
+          "Gestão de Sistemas de Informação",
+          "Oficina de Sistemas Informáticos"
+      ]
+    },
+    "estagios": [{
+      "cromotema":{
+          "nome": "Cromotema Artes Gráficas",
+          "duracao": "2017, 120 horas",
+          "local":"Vila Nova de Gaia",
+          "experiencia": "Este foi o meu primeiro estágio, que teve uma curta duração mas tive a oportunidade de conhecer e ver como é no mundo real. Apesar de não ter estado na minha área, pois fiz mais tarefas manuais, como por exemplo, manusear autocolantes, trabalhar com placas pvc, etc, foi sempre uma ótima experiência!"
+      },
+      "pocas":{
+        "nome": "Poças Júnior",
+        "duracao": "2018, 360 horas",
+        "local": "Vila Nova de Gaia",
+        "experiencia": "Neste estágio tive a oportunidade de estar na parte de TI onde, primeiramente, efetuei uma limpeza nas pastas no servidor e a organização das mesmas, por vezes era chamado para ir resolver um problema no computador de alguém. Mais para o final do estágio acabei por desenvolver uma aplicação web que servia para fazer a requisição de material ao armazém. O que eu retirei deste estágio principalmente foi a importância que os Sistemas de Informação fazem numa empresa e que o trabalho de equipa e a comunicação são duas soft skills fundamentais."
+      }
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "website": "http://publication.com",
+      "summary": "Description..."
+    }],
+    "skills": {
+      "tecnicas":[
+        "WEB Development",
+        "Sistemas de Informação",
+        "Estrutura de Dados e Algoritmos"
+      ],
+      "soft":[
+        "Trabalho em equipa",
+        "Colaboração",
+        "Comunicação"
+      ]
+    },
+    "linguasExtra": [{
+      "lingua": "Inglês",
+      "especialidade": "Comunico e compreendo bem a língua inglesa"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }]
+  }
