@@ -10,6 +10,7 @@ var skillsSoft = ulSoft.getElementsByTagName("li");
 
 
 //Instacimento de varáveis para a parte SOBRE
+var imgPerfil = document.getElementById("imgPerfil");
 var texto = document.getElementById("demo");
 var dataNasc = document.getElementById("dataNasc");
 var textWebsite = document.getElementById("site");
@@ -61,6 +62,7 @@ function resultado() {
       textWebsite.innerText = json.basics.site;
       numTel.innerText = json.basics.telemovel;
       cidade.innerText = json.basics.localizacao.cidade;
+      imgPerfil.src = json.basics.picture;
 
 
       //SKILLS
