@@ -46,6 +46,14 @@ var emailContact = document.getElementById("emailContact");
 var numeroContact = document.getElementById("numeroContact");
 
 
+//PORTFOLIO
+var descricaoPortfolio = document.getElementById("descricaoPortfolio");
+var divImagem1 = document.getElementById("imagemApp1");
+var divImagem2 = document.getElementById("imagemApp2");
+var divImagemWeb1 = document.getElementById("imagemWeb1");
+var divImagemWeb2 = document.getElementById("imagemWeb2");
+
+
 function resultado() {
   fetch("assets/curriculo/cv.json").then((response) => {
     return response.json().then(function (json) {
@@ -96,7 +104,16 @@ function resultado() {
       estagioPocas.innerHTML = "<h4>" + json.estagios[0].pocas.nome + "</h4><h5>"+ json.estagios[0].pocas.duracao + "</h5><p><em>" + json.estagios[0].pocas.local + "</em></p>" + "<p>" + json.estagios[0].pocas.experiencia;
       estagioCromotema.innerHTML = "<h4>" + json.estagios[0].cromotema.nome + "</h4><h5>"+ json.estagios[0].cromotema.duracao + "</h5><p><em>" + json.estagios[0].cromotema.local + "</em></p>" + "<p>" + json.estagios[0].cromotema.experiencia;
       
+      //PORTFOLIO
+      descricaoPortfolio.innerText = json.portfolio.descricao;
+      var titulo = "App1";
+      divImagem1.innerHTML = "<img src=" + json.portfolio.DoThings.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.DoThings.nome + "</h4><p>" + json.portfolio.DoThings.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.DoThings.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
+      //iconMais.classList.add("bx", "bx-plus");
 
+      divImagem2.innerHTML = "<img src=" + json.portfolio.TypeRacer.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.TypeRacer.nome + "</h4><p>" + json.portfolio.TypeRacer.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.TypeRacer.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
+      divImagemWeb1.innerHTML = "<img src=" + json.portfolio.JogoGalo.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.JogoGalo.nome + "</h4><p>" + json.portfolio.JogoGalo.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.JogoGalo.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
+      divImagemWeb2.innerHTML = "<img src=" + json.portfolio.JogoForca.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.JogoForca.nome + "</h4><p>" + json.portfolio.JogoForca.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.JogoForca.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
+      
       //CONTACT
       localContact.innerText = json.basics.localizacao.cidade;
       emailContact.innerText = json.basics.email;

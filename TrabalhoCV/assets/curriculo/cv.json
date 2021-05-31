@@ -69,13 +69,6 @@
         "experiencia": "Neste estágio tive a oportunidade de estar na parte de TI onde, primeiramente, efetuei uma limpeza nas pastas no servidor e a organização das mesmas, por vezes era chamado para ir resolver um problema no computador de alguém. Mais para o final do estágio acabei por desenvolver uma aplicação web que servia para fazer a requisição de material ao armazém. O que eu retirei deste estágio principalmente foi a importância que os Sistemas de Informação fazem numa empresa e que o trabalho de equipa e a comunicação são duas soft skills fundamentais."
       }
     }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "website": "http://publication.com",
-      "summary": "Description..."
-    }],
     "skills": {
       "tecnicas":[
         "WEB Development",
@@ -92,13 +85,29 @@
       "lingua": "Inglês",
       "especialidade": "Comunico e compreendo bem a língua inglesa"
     }],
-    "interests": [{
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
+    "portfolio": {
+      "descricao": "Nesta secção, poderá ver alguns projetos pessoais e de grupo, sendo estes desenvolvidos em linguagens como Python, Javascript, PHP, etc.",
+      "DoThings":{
+        "nome": "DoThings",
+        "descricao": "Aplicação de produtividade desenvolvida em Python no âmbito do projeto de PTDA",
+        "link": "https://i.imgur.com/4sKJVfw.png"
+      },
+      "TypeRacer":{
+        "nome": "TypeRacer",
+        "descricao": "Jogo popular de escrita rápida desenvolvido em Python. Este projeto foi desenvolvido como um side-project",
+        "link": "https://i.imgur.com/Ge1tdFa.png"
+      },
+      "JogoGalo":{
+        "nome": "Jogo do Galo",
+        "descricao": "Jogo do Galo temporizado e com vários tamanhos desenvolvido em PTW",
+        "link": "https://i.imgur.com/okPwPLD.png"
+      },
+      "JogoForca":{
+        "nome": "Jogo da Forca",
+        "descricao": "Jogo popular da forca com palavras sobre programação desenvolvido em PTW",
+        "link": "https://i.imgur.com/pPLvUjM.png"
+      }
+    },
     "references": [{
       "name": "Jane Doe",
       "reference": "Reference..."
