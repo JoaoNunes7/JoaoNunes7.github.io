@@ -87,29 +87,30 @@
     }],
     "portfolio": {
       "descricao": "Nesta secção, poderá ver alguns projetos pessoais e de grupo, sendo estes desenvolvidos em linguagens como Python, Javascript, PHP, etc.",
-      "DoThings":{
+      "projetos":[
+      {
         "nome": "DoThings",
         "descricao": "Aplicação de produtividade desenvolvida em Python no âmbito do projeto de PTDA",
-        "link": "https://i.imgur.com/4sKJVfw.png"
+        "link": "https://i.imgur.com/4sKJVfw.png",
+        "link2": "#"
       },
-      "TypeRacer":{
+      {
         "nome": "TypeRacer",
         "descricao": "Jogo popular de escrita rápida desenvolvido em Python. Este projeto foi desenvolvido como um side-project",
-        "link": "https://i.imgur.com/Ge1tdFa.png"
+        "link": "https://i.imgur.com/Ge1tdFa.png",
+        "link2": "#"
       },
-      "JogoGalo":{
+     {
         "nome": "Jogo do Galo",
         "descricao": "Jogo do Galo temporizado e com vários tamanhos desenvolvido em PTW",
-        "link": "https://i.imgur.com/okPwPLD.png"
+        "link": "https://i.imgur.com/okPwPLD.png",
+        "link2": "https://joaonunes7.github.io./Ficha11/index.html"
       },
-      "JogoForca":{
+      {
         "nome": "Jogo da Forca",
         "descricao": "Jogo popular da forca com palavras sobre programação desenvolvido em PTW",
-        "link": "https://i.imgur.com/pPLvUjM.png"
+        "link": "https://i.imgur.com/pPLvUjM.png",
+        "link2": "https://joaonunes7.github.io./Ficha9/index.html"
       }
-    },
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference..."
-    }]
+      ]}
   }

@@ -1,6 +1,9 @@
 //Variavies Redes Sociais
 var divSociais = document.getElementById("divSociais");
 var linksSociais = divSociais.getElementsByTagName("a");
+var divSociais2 = document.getElementById("divSociais2");
+var linksSociais2 = divSociais2.getElementsByTagName("a");
+
 
 //Listas skills
 var ulTecnicas = document.getElementById("skillsTecnicas");
@@ -48,19 +51,17 @@ var numeroContact = document.getElementById("numeroContact");
 
 //PORTFOLIO
 var descricaoPortfolio = document.getElementById("descricaoPortfolio");
-var divImagem1 = document.getElementById("imagemApp1");
-var divImagem2 = document.getElementById("imagemApp2");
-var divImagemWeb1 = document.getElementById("imagemWeb1");
-var divImagemWeb2 = document.getElementById("imagemWeb2");
-
+var caixas = Array.from(document.getElementsByClassName("prInfo"));
 
 function resultado() {
   fetch("assets/curriculo/cv.json").then((response) => {
     return response.json().then(function (json) {
-
       //LINKS REDES SOCIAIS
       for(let i = 0; i< linksSociais.length; i++){
         linksSociais[i].href = json.basics.redesSociais[i];
+      }
+      for(let i = 0; i< linksSociais2.length; i++){
+        linksSociais2[i].href = json.basics.redesSociais[i];
       }
 
 
@@ -106,14 +107,9 @@ function resultado() {
       
       //PORTFOLIO
       descricaoPortfolio.innerText = json.portfolio.descricao;
-      var titulo = "App1";
-      divImagem1.innerHTML = "<img src=" + json.portfolio.DoThings.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.DoThings.nome + "</h4><p>" + json.portfolio.DoThings.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.DoThings.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
-      //iconMais.classList.add("bx", "bx-plus");
 
-      divImagem2.innerHTML = "<img src=" + json.portfolio.TypeRacer.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.TypeRacer.nome + "</h4><p>" + json.portfolio.TypeRacer.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.TypeRacer.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
-      divImagemWeb1.innerHTML = "<img src=" + json.portfolio.JogoGalo.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.JogoGalo.nome + "</h4><p>" + json.portfolio.JogoGalo.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.JogoGalo.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
-      divImagemWeb2.innerHTML = "<img src=" + json.portfolio.JogoForca.link + " class=img-fluid><div class=portfolio-info><h4>" + json.portfolio.JogoForca.nome + "</h4><p>" + json.portfolio.JogoForca.descricao + "</p><div class=portfolio-links><a href="+json.portfolio.JogoForca.link + " data-gallery=portfolioGallery class=portfolio-lightbox title="+titulo+"></a></div></div>"; 
-      
+        for(let count = 0;count<caixas.length;count++)
+          caixas[count].innerHTML = "<h4>" + json.portfolio.projetos[count].nome + "</h4><p>"+ json.portfolio.projetos[count].descricao + "</p><div class=portfolio-links><a href="+json.portfolio.projetos[count].link+" data-gallery='portfolioGallery' class='portfolio-lightbox' title='Web 2'><i class='bx bx-plus'></i></a><a href="+json.portfolio.projetos[count].link2+" class='portfolio-details-lightbox' data-glightbox='type: external' title='Portfolio Details'><i class='bx bx-link'></i></a></div></div>"
       //CONTACT
       localContact.innerText = json.basics.localizacao.cidade;
       emailContact.innerText = json.basics.email;
