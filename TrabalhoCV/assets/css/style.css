@@ -1201,3 +1201,11 @@ section {
 .selectSkills option{
   background: #f2f3f5;
 }
+
+.iconTamanho{
+  font-size: 75px;
+}
+.iconsRow{
+  justify-content: flex-end;
+  text-align: center;
+}

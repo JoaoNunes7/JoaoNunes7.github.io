@@ -11,6 +11,8 @@ var skillsTecnicas = ulTecnicas.getElementsByTagName("li");
 var ulSoft = document.getElementById("skillsSoft");
 var skillsSoft = ulSoft.getElementsByTagName("li");
 
+var iconsLing = document.getElementsByClassName("icon");
+var countIcon = 0;
 
 //Instacimento de varáveis para a parte SOBRE
 var imgPerfil = document.getElementById("imgPerfil");
@@ -82,6 +84,10 @@ function resultado() {
         skillsSoft[i].innerText = json.skills.soft[i];
       }
 
+      Array.from(iconsLing).forEach(function(element){
+        element.innerHTML += "<h4><a href="+ json.skills.linguagens[countIcon].site + ">" + json.skills.linguagens[countIcon].nome + "</a></h4>";
+        countIcon++;
+      })
       //PARTE DO CURRICULO
       sumarioNome.innerText = json.basics.nome;
       sumarioPequenaInt.innerText = json.basics.sumario;
@@ -109,7 +115,7 @@ function resultado() {
       descricaoPortfolio.innerText = json.portfolio.descricao;
 
         for(let count = 0;count<caixas.length;count++)
-          caixas[count].innerHTML = "<h4>" + json.portfolio.projetos[count].nome + "</h4><p>"+ json.portfolio.projetos[count].descricao + "</p><div class=portfolio-links><a href="+json.portfolio.projetos[count].link+" data-gallery='portfolioGallery' class='portfolio-lightbox' title='Web 2'><i class='bx bx-plus'></i></a><a href="+json.portfolio.projetos[count].link2+" class='portfolio-details-lightbox' data-glightbox='type: external' title='Portfolio Details'><i class='bx bx-link'></i></a></div></div>"
+          caixas[count].innerHTML = "<h4>" + json.portfolio.projetos[count].nome + "</h4><p>"+ json.portfolio.projetos[count].descricao + "</p><div class=portfolio-links><a href="+json.portfolio.projetos[count].link2+" class='portfolio-details-lightbox' data-glightbox='type: external' title='Portfolio Details'><i class='bx bx-link'></i></a></div></div>"
       //CONTACT
       localContact.innerText = json.basics.localizacao.cidade;
       emailContact.innerText = json.basics.email;

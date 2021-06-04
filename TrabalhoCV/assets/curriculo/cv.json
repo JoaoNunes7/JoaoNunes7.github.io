@@ -79,6 +79,55 @@
         "Trabalho em equipa",
         "Colaboração",
         "Comunicação"
+      ],
+      "linguagens":[{
+          "nome": "HTML",
+          "site": "https://en.wikipedia.org/wiki/HTML5"
+        },
+        {
+          "nome": "CSS",
+          "site": "https://www.w3.org/Style/CSS/Overview.en.html"
+        },
+        {
+          "nome": "JavaScript",
+          "site": "https://www.javascript.com/"
+        },
+        {
+          "nome": "PHP",
+          "site": "https://www.php.net/"
+        },
+        {
+          "nome": "Python",
+          "site": "https://www.python.org/"
+        },
+        {
+          "nome": "Java",
+          "site": "https://www.java.com/en/"
+        },
+        {
+          "nome": "C",
+          "site": "https://en.wikipedia.org/wiki/C_(programming_language)"
+        },
+        {
+          "nome": "Android",
+          "site": "https://developer.android.com/"
+        },
+        {
+          "nome": "MySQL",
+          "site": "https://www.mysql.com/"
+        },
+        {
+          "nome": "PostgreSQL",
+          "site": "https://www.postgresql.org/"
+        },
+        {
+          "nome": "Git",
+          "site": "https://git-scm.com/"
+        },
+        {
+          "nome": "Firebase",
+          "site": "https://firebase.google.com/"
+        }
       ]
     },
     "linguasExtra": [{
@@ -92,13 +141,13 @@
         "nome": "DoThings",
         "descricao": "Aplicação de produtividade desenvolvida em Python no âmbito do projeto de PTDA",
         "link": "https://i.imgur.com/4sKJVfw.png",
-        "link2": "#"
+        "link2": "https://code.ua.pt/projects/grupo-3-ptda/repository"
       },
       {
         "nome": "TypeRacer",
         "descricao": "Jogo popular de escrita rápida desenvolvido em Python. Este projeto foi desenvolvido como um side-project",
         "link": "https://i.imgur.com/Ge1tdFa.png",
-        "link2": "#"
+        "link2": "https://github.com/JoaoNunes7/TypeRacer"
       },
      {
         "nome": "Jogo do Galo",
