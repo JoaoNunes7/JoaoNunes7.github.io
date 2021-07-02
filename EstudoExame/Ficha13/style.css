@@ -1,0 +1,39 @@
+form{
+    width: fit-content;
+}
+.form{
+    border: 1px solid black;
+    padding: 20px;
+    width: fit-content;
+}
+.form input{
+    margin-top: 10px;
+}
+.number{
+    width: 50px;
+}
+.container{
+    margin-left: 20px;
+    font-size: 20px;
+    width: 50%;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.row{
+    border-top: 1px solid black;
+    margin-right: 40px;
+    padding: 10px;
+}
+.btn{
+    font-weight: bold;
+    color: white;
+    background-color: lightgreen;
+    border: none;
+    padding: 7px;
+}
+.divBtns{
+    margin-top: 20px;
+    position: relative;
+    float: right;
+}

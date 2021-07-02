@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>EstudoExame-Ficha13</title>
+</head>
+
+<body>
+    <form>
+        <div class="form">
+            <label>Utilizador: </label><input type="text" id="txtUtilizador" class="texto" />
+            <label>Nome: </label><input type="text" id="txtNome" class="texto" /><br />
+            <label>Password: </label><input type="password" id="txtPass" class="texto" />
+            <label>Idade: </label><input type="number" class="number" id='txtIdade'/>
+            <label>Categoria: </label><select id="selectCategoria">
+                <option selected disabled>Selecione a categoria</option>
+                <option value="1">Técnico Informático</option>
+                <option value="2">Estudante</option>
+                <option value="3">Administrador de BD</option>
+                <option value="4">Programador</option>
+                <option value="5">Analista de Sistemas</option>
+            </select>
+        </div>
+        <div class="divBtns">
+            <button class='btn' type="submit" id='btnEliminar'>Eliminar</button>
+            <button class='btn' type="submit" id='btnGravarEditar'>Gravar</button>
+            <button class="btn" type="submit" id='btnGravar'>Gravar</button>
+            <button class="btn" type='reset' id='btnReset'>Reset</button>
+        </div>
+    </form>
+    <h1>Lista de Utilizadores</h1>
+    <div class="container" id="divPrincipal"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
